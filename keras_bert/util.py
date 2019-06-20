@@ -17,7 +17,6 @@ __all__ = [
     'get_checkpoint_paths', 'extract_embeddings_generator', 'extract_embeddings',
 ]
 
-
 POOL_NSP = 'POOL_NSP'
 POOL_MAX = 'POOL_MAX'
 POOL_AVE = 'POOL_AVE'
