@@ -82,6 +82,7 @@ test_x, test_y = load_data(test_path)
 
 # 定义自定义模型
 inputs = model.inputs[:2]
+bert_out_seq = model.get_
 dense = model.get_layer('NSP-Dense').output  # 获取'NSP-Dense'层的输出
 outputs = keras.layers.Dense(units=2, activation='softmax')(dense)  # 稠密层 + softmax
 decay_steps, warmup_steps = calc_train_steps(  # 指数衰减步数，热启动步数
